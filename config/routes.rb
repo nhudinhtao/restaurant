@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'menu' => 'home#menu'
+  get 'contact_us' => 'home#contact_us'
+
   root 'home#index'	
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
