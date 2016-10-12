@@ -2,9 +2,16 @@
 
   <h1>Welcome to Au Délice &amp; Le Restaurant d'Arthur</h1>
     <div class="btn-group" role="group" aria-label="Basic example">
-      <%= link_to "All", menu_path, class: 'btn btn-secondary' %>
+      <%= link_to "All", root_path, class: 'btn btn-secondary' %>
       <%= link_to "Breakfast", contact_us_path, class: 'btn btn-secondary' %>
       <%= link_to "Lunch", contact_us_path, class: 'btn btn-secondary' %>
       <%= link_to "Dinner", contact_us_path, class: 'btn btn-secondary' %>
-    </div>   
+      <%= link_to "Drinks", contact_us_path, class: 'btn btn-secondary' %>
+    </div>
+
+    <div class="row">
+    <% @foodItems.each do |food_item| %>
+      <%= render food_item %>
+    <% end %>
+    </div>
 </section>
