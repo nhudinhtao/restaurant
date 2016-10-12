@@ -4,7 +4,7 @@
 
 Submitted by: **Tao Nhu**
 
-Time spent: **0** hours spent in total (Counting TODO)
+Time spent: **8** hours spent in total (Counting TODO)
 
 URL: **heroku-app-url**
 
@@ -13,8 +13,8 @@ URL: **heroku-app-url**
 ### Required:
 
 * [x] User must be able to go two pages: Menu, and Contact Us.
-* [ ] User can see the address and phone number on the contact us page.
-* [ ] User can see a basic google map on the Contact Us page.
+* [x] User can see the address and phone number on the contact us page.
+* [x] User can see a basic google map on the Contact Us page.
 * [ ] User can navigate to a menu page with four sections:
 * [ ] Breakfast
 * [ ] Lunch
