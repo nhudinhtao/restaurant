@@ -1,11 +1,5 @@
 Rails.application.routes.draw do
   resources :food_items
-  get 'menu' => 'menu#index'
-  get 'contact_us' => 'home#contact_us'
-  get 'breakfast' => 'home#breakfast'
-  get 'lunch' => 'home#lunch'
-  get 'dinner' => 'home#dinner'
-  get 'drinks' => 'home#drinks'
 
   root 'home#index'	
   # The priority is based upon order of creation: first created -> highest priority.
