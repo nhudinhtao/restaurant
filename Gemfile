@@ -35,7 +35,9 @@ gem 'bootstrap', '~> 4.0.0.alpha4'
 #font awesome
 gem "font-awesome-rails"
 
-gem 'rails-assets-tether'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '1.1.1'
+end
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
