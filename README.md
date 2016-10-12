@@ -4,7 +4,7 @@
 
 Submitted by: **Tao Nhu**
 
-Time spent: **8** hours spent in total (Counting TODO)
+Time spent: **16** hours spent in total (Counting TODO)
 
 URL: **heroku-app-url**
 
