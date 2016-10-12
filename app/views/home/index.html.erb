@@ -2,12 +2,35 @@
 
   <h1>Welcome to Au Délice Restaurant!</h1>
     <div class="btn-group" role="group" aria-label="Basic example">
-      <%= link_to "All", root_path, class: 'btn btn-secondary' %>
-      <%= link_to "Breakfast", root_path(:section => '0'), class: 'btn btn-secondary' %>
-      <%= link_to "Lunch", root_path(:section => '1'), class: 'btn btn-secondary' %>
-      <%= link_to "Dinner", root_path(:section => '2'), class: 'btn btn-secondary' %>
-      <%= link_to "Drinks", root_path(:section => '3'), class: 'btn btn-secondary' %>
+      <%= link_to "All", root_path(:orderby => @orderby), class: 'btn btn-secondary' %>
+      <%= link_to "Breakfast", root_path(:section => '0', :orderby => @orderby), class: 'btn btn-secondary' %>
+      <%= link_to "Lunch", root_path(:section => '1', :orderby => @orderby), class: 'btn btn-secondary' %>
+      <%= link_to "Dinner", root_path(:section => '2', :orderby => @orderby), class: 'btn btn-secondary' %>
+      <%= link_to "Drinks", root_path(:section => '3', :orderby => @orderby), class: 'btn btn-secondary' %>
     </div>
+
+    <div class="btn-group">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <%= case @orderby.to_i
+          when 0
+            'Alphabetical'
+          when 1
+            'Price low to high'
+          when 2
+            'Price high to low'
+          else
+            'Alphabetical'
+          end
+      %> 
+     </button>
+    <div class="dropdown-menu">
+      <%= link_to "Alphabetical", root_path(:section => params[:section], :orderby => '0'), class:  'dropdown-item'%>
+      <div class="dropdown-divider"></div>
+      <%= link_to "Price low to high", root_path(:section => params[:section], :orderby => '1'), class:  'dropdown-item'%>
+      <div class="dropdown-divider"></div>
+      <%= link_to "Price high to low", root_path(:section => params[:section], :orderby => '2'), class:  'dropdown-item'%>
+    </div>
+  </div>
 
     <div class="row">
     <% @foodItems.each do |food_item| %>
