@@ -3,10 +3,10 @@
   <h1>Welcome to Au Délice Restaurant!</h1>
     <div class="btn-group" role="group" aria-label="Basic example">
       <%= link_to "All", root_path, class: 'btn btn-secondary' %>
-      <%= link_to "Breakfast", contact_us_path, class: 'btn btn-secondary' %>
-      <%= link_to "Lunch", contact_us_path, class: 'btn btn-secondary' %>
-      <%= link_to "Dinner", contact_us_path, class: 'btn btn-secondary' %>
-      <%= link_to "Drinks", contact_us_path, class: 'btn btn-secondary' %>
+      <%= link_to "Breakfast", root_path(:section => '0'), class: 'btn btn-secondary' %>
+      <%= link_to "Lunch", root_path(:section => '1'), class: 'btn btn-secondary' %>
+      <%= link_to "Dinner", root_path(:section => '2'), class: 'btn btn-secondary' %>
+      <%= link_to "Drinks", root_path(:section => '3'), class: 'btn btn-secondary' %>
     </div>
 
     <div class="row">
