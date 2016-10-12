@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :food_items
+  get 'contact_us' => 'home#contact_us'
 
   root 'home#index'	
   # The priority is based upon order of creation: first created -> highest priority.
