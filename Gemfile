@@ -32,9 +32,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Bootstrap 4
 gem 'bootstrap', '~> 4.0.0.alpha4'
 
-source 'https://rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.1.0'
-end
+#font awesome
+gem "font-awesome-rails"
+
+gem 'rails-assets-tether'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Restaurant</title>
+  <title>
+    Welcome to Au Délice &amp; Le Restaurant d'Arthur!
+  </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container">
-  <%= yield %>
-</div>
+  <header class="container">
+    <nav class="navbar navbar-light bg-faded">
+    <%= link_to "Au Délice", root_path, class: 'navbar-brand'%>
+  <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <%= link_to "Home", root_path, class: 'nav-link'%>
+    </li>
+    <li class="nav-item">
+      <%= link_to "Contact Us", contact_us_path, class: 'nav-link' %>
+    </li>
+  </ul>
+  <form class="form-inline pull-xs-right">
+    <input class="form-control" type="text" placeholder="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+</nav>
+  </header>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
