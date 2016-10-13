@@ -58,7 +58,7 @@ The following **known issues**:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](path-to-your-GIF-file)
+![Video Walkthrough](<iframe src="//giphy.com/embed/l0MYRP6ZRCNPDZWvK" width="480" height="252" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/l0MYRP6ZRCNPDZWvK">via GIPHY</a></p>)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
