@@ -2,12 +2,18 @@ class HomeController < ApplicationController
   @orderby = 0
   def index
     section = params[:section]
-    @orderby = params[:orderby] 
+    @orderby = params[:orderby]
+    search = params[:query]
     if section
         @foodItems = FoodItem.where(section: section)
     else
         @foodItems = FoodItem.all
     end
+
+    if search
+      @foodItems = @foodItems.where('name ILIKE ? or description ILIKE ? ', "%#{search}%", "%#{search}%")
+    end
+
     case @orderby.to_i 
       when 0
         @foodItems = @foodItems.order('name asc')
