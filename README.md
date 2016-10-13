@@ -58,7 +58,7 @@ The following **known issues**:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](<iframe src="//giphy.com/embed/l0MYRP6ZRCNPDZWvK" width="480" height="252" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/l0MYRP6ZRCNPDZWvK">via GIPHY</a></p>)
+![Video Walkthrough](https://github.com/nhudinhtao/restaurant/raw/23ea7097699e090d04e837c6860542fbcf57612e/restaurant.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
