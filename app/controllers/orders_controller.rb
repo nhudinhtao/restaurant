@@ -5,6 +5,12 @@ class OrdersController < ApplicationController
   # GET /orders.json
   def index
     @orders = Order.all
+    @total = 0
+    @orders.each do |order|
+      if order.food_item
+        @total =  order.food_item.price + @total
+      end
+    end
   end
 
   # GET /orders/1
@@ -14,8 +20,12 @@ class OrdersController < ApplicationController
 
   # GET /orders/new
   def new
-    @foodItem = FoodItem.find(params[:food_item_id])
-    @order = Order.new
+    if params[:food_item_id]
+      @foodItem = FoodItem.find(params[:food_item_id])
+      @order = Order.new
+    else
+      redirect_to root_path
+    end
   end
 
   # GET /orders/1/edit
