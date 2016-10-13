@@ -20,3 +20,9 @@
     <img src="<%= @food_item.image_url %>" title="<%= @food_item.name %>" />
   <% end %>
 </p>
+
+<p>
+<%= content_tag(:a, :href => new_order_path) do %>
+  <%= button_tag "Order", class: 'btn btn-outline-success' %>
+<% end %>
+</p><br/><br/>
