@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Orders</h1>
+<h1>Thank you for your orders page</h1>
 
 <table>
   <thead>
@@ -18,7 +18,7 @@
   <tbody>
     <% @orders.each do |order| %>
       <tr>
-        <td><%= order.food_item %></td>
+        <td><%= order.food_item.name %></td>
         <td><%= order.name %></td>
         <td><%= order.phone %></td>
         <td><%= order.email %></td>
@@ -33,5 +33,7 @@
 </table>
 
 <br>
+
+Total: $20 <br/>
 
 <%= link_to 'New Order', new_order_path %>

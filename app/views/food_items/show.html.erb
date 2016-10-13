@@ -22,7 +22,7 @@
 </p>
 
 <p>
-<%= content_tag(:a, :href => new_order_path) do %>
+<%= content_tag(:a, :href => new_order_path(:food_item_id => params[:id])) do %>
   <%= button_tag "Order", class: 'btn btn-outline-success' %>
 <% end %>
 </p><br/><br/>
