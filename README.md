@@ -4,7 +4,7 @@
 
 Submitted by: **Tao Nhu**
 
-Time spent: **19** hours spent in total (Counting TODO)
+Time spent: **20** hours spent in total (Counting TODO)
 
 URL: **https://floating-journey-59105.herokuapp.com/**
 
