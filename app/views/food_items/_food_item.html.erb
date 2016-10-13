@@ -5,14 +5,14 @@
     </div>
 
     <div class="bg">
-      <a href="/<%= food_item.id %>">
+      <%= content_tag(:a, :href => food_item_path(food_item.id)) do %>
         <div class="msg-wrap">
           <div class="msg">
             <%= food_item.name %><br/>
             $<%= food_item.price %>
           </div>
         </div>
-      </a>
+      <% end %>
     </div>
   </div>
 </div>

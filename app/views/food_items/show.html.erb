@@ -12,18 +12,11 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @food_item.price %>
+  $<%= @food_item.price %>
 </p>
 
 <p>
-  <strong>Section:</strong>
-  <%= @food_item.section %>
+  <%= content_tag(:a, :href => root_path) do %>
+    <img src="<%= @food_item.image_url %>" title="<%= @food_item.name %>" />
+  <% end %>
 </p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @food_item.image_url %>
-</p>
-
-<%= link_to 'Edit', edit_food_item_path(@food_item) %> |
-<%= link_to 'Back', food_items_path %>
