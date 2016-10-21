@@ -9,9 +9,9 @@
       <% end %>
       </ul>
     </div>
-  <% end %>
+  <% else %>
 
-  <div class="form-group">
+    <div class="form-group">
     <%= f.label :food_item_id %>
     <%= f.text_field :food_item_id, :value => params[:food_item_id], :readonly => true, class: 'form-control' %>
   </div>
@@ -44,4 +44,7 @@
   <div class="form-group">
     <%= f.submit "Create Oder", class: 'btn btn-secondary'%>
   </div>
+
+  <% end %>
+  
 <% end %>

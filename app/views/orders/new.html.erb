@@ -1,5 +1,8 @@
-<h1><%= @foodItem.name %></h1>
+<% if @foodItem %>
+  <h1><%= @foodItem.name %></h1>
+<% else %>
+  <h1>Errors please back home page</h1>
+<% end %>
 
 <%= render 'form', order: @order %>
-
 <%= link_to 'Back', orders_path %>
